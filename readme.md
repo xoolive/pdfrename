@@ -21,7 +21,8 @@ Use `j(oin)` to merge the current suggestion with next line (for papers with a t
 pip install pdfrename
 ```
 
-Add option `--user` after `install` if need be. The executable will be installed in a directory with read/write access.  
+Try `pip install --user pdfrename` if need be.  
+The executable will be installed in a directory with read/write access.  
 Check the directory (which depends on your Python installation) is in your `PATH` variable.  
 Try `/usr/local/bin`, `$HOME/.local/bin`, ...
 
