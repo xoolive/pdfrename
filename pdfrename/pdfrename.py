@@ -74,21 +74,21 @@ def workflow(filename):
     try:
         text = pdfinfo(filename)
         if len(text) > 5:
-            yield text
+            yield text.strip()
     except:
         warnings.warn("pdfinfo (from poppler-utils) unfound", RuntimeWarning)
         pass
     try:
         for text in parse_toc(filename):
             if len(text) > 5:
-                yield text
+                yield text.strip()
     except:
         warnings.warn("Error when parsing the structure of the document",
                       RuntimeWarning)
         pass
     for text in parse_text(filename):
         if len(text) > 5:
-            yield text
+            yield text.strip()
 
 
 def validate(old_name, new_name, prefix):
