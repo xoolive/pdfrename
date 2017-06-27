@@ -5,7 +5,7 @@ MIT license, Xavier Olive 2017
 ## Installation
 
 ```sh
-pip install git+https://github.com/xoolive/pdfrename
+pip install --user git+https://github.com/xoolive/pdfrename
 ```
 
 ## Usage

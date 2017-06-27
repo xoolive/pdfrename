@@ -111,6 +111,7 @@ def validate(old_name, new_name, prefix):
 
 def main():
     for filename in sys.argv[1:]:
+        filename = os.path.abspath(filename)
         prefix = os.path.dirname(filename) + "/"
         for text in workflow(filename):
             output = validate(filename, text, prefix)
